@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round1</title>
+    <link rel="stylesheet" href="third_round.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-image">
+        <div class="heading"></div>
+        <div class="header">
+          <div class="detail-container">
+          <div class="wpm">
+            <div class="header_text">WPM</div>
+            <div class="curr_wpm">100</div>
+          </div>
+          <div class="errors">
+            <div class="header_text">Errors</div>
+            <div class="curr_errors">0</div>
+          </div>
+          <div class="timer">
+            <div class="header_text">Time</div>
+            <div class="curr_time">90s</div>
+          </div>
+          <div class="accuracy">
+            <div class="header_text">% Accuracy</div>
+            <div class="curr_accuracy">100</div>
+          </div>
+          <div class="cpm">
+            <div class="header_text">CPM</div>
+            <div class="curr_cpm">100</div>
+          </div>
+        </div>
+        </div>
+        <!-- Radio buttons for selecting challenge -->
+        <div class="challenge_radio_container">
+          <!-- Radio buttons will be generated dynamically here -->
+        </div>
+
+        <div class="quote-container">
+        <div class="quote">Click on the area below to start the game.</div></div>
+        <textarea
+          class="input_area"
+          placeholder="start typing here..." 
+          oninput="processCurrentText()"
+          onfocus="startGame()"
+        ></textarea>
+        <button class="restart_btn" onclick="resetValues()">Restart</button>
+      </div>
+    </div>
+  
+
+    <!-- link the JavaScript file here -->
+    <script src="third_round.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Jacquard+12+Charted&family=Pacifico&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh; /* Use viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url("round3.png");
+    background-size: cover; /* Make the background cover the entire viewport */
+    background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    margin-top: 100px;
+    left:3%;
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: whitesmoke;
+    text-shadow: -3px -3px 9px #aaa9a9a2, 8px 3px 7px rgba(147, 149, 151, 0.671);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; Update to space-around */
+}
+
+.timer,
+.errors,
+.accuracy,
+.cpm,
+.wpm {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+      height: 60px;
+      width: 70px;
+      margin: 8px;
+      padding: 12px;
+      border-radius: 15%;
+      box-shadow: darkkhaki 5px 8px 5px;
+}
+
+.cpm,
+.wpm {
+  display: none;
+}
+
+.header_text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.curr_time,
+.curr_errors,
+.curr_accuracy,
+.curr_cpm,
+.curr_wpm {
+    font-size: 2.75rem;
+ /* Keeping font-size from code 1 */
+}
+
+
+.quote {
+  background-color: #FAACA8; /* Keeping the background-color from code 1 */
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: black 5px 8px 5px; /* Update box-shadow */
+  color: rgb(0, 0, 0); /* Keeping color from code 1 */
+  position:absolute;
+  top:16rem;
+  left:38rem;
+  width:50%;
+  max-width: 800px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  min-height: 50px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.input_area {
+  height: 80px;
+  width: 100%; /* Keeping width from code 1 */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  top: 1rem;
+  right:3.5rem;
+  border: 0px;
+  box-shadow: rgb(60, 1, 1) 5px 8px 5px;
+  color: rgb(206, 104, 107);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  box-shadow: 0 0 30px skyblue;
+  border: 1px solid #1a1717;
+  border-image: linear-gradient(#e3517d, #e7669e);
+  transition: 0.5s;
+  position:relative;}
+
+.text_box {
+  height: 250px;
+  width: 800px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(#ff8c00, #ff4500);
+  box-shadow: 0 0 50px #ff4500;
+  border: 1px solid transparent;
+  border-image: linear-gradient(#ff8c00, #ff4500);
+  transition: 1s;
+  font-size: 130%;
+}
+
+.Text {
+  font-size: 140%;
+  left: 40%;
+  color: orange;
+  text-shadow: 0 0 10px orange;
+  position: relative;
+}
+
+.input_area:focus {
+  color: rgb(39, 20, 3);
+  background-color: #82b0bc;
+  background-image: linear-gradient(19deg, #82b0bc 0%, #b970df 100%);
+    border: 1px solid #000;
+    border-image: linear-gradient(#7b68ee, #00bfff);
+    transition: 0.5s;
+}
+
+.restart_btn {
+  display: none;
+  background-color: #326765;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: darkgreen;
+}
+
+.detail-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 10rem;
+}
+
+.copy {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+  font-family: 'Futura', 'Helvetica Neue', Helvetica;
+  color: #333;
+  
+  h1 {
+      margin: 0;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 7vmin;
+      font-weight: 700;
+  }
+  
+  p {
+      margin: 0;
+  }
+}
+
+/* New styles from code 2 */
+.challenge_radio_container {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  position: absolute;
+  top:11rem;
+  left:25rem;
+}
